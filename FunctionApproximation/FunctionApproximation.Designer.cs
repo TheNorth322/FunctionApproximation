@@ -28,50 +28,65 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.filePathTextBox = new System.Windows.Forms.TextBox();
             this.pathLabel = new System.Windows.Forms.Label();
             this.buildPlotsButton = new System.Windows.Forms.Button();
             this.pointsLabel = new System.Windows.Forms.Label();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
+            this.tableLayoutPanel1.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // chart1
             // 
-            chartArea2.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea2);
-            legend2.Name = "Legend1";
-            this.chart1.Legends.Add(legend2);
-            this.chart1.Location = new System.Drawing.Point(12, 12);
+            this.chart1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            chartArea3.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea3);
+            legend3.Name = "Legend1";
+            this.chart1.Legends.Add(legend3);
+            this.chart1.Location = new System.Drawing.Point(3, 3);
             this.chart1.Name = "chart1";
-            this.chart1.Size = new System.Drawing.Size(1003, 602);
+            this.chart1.Size = new System.Drawing.Size(653, 537);
             this.chart1.TabIndex = 0;
             this.chart1.Text = "chart";
             // 
             // filePathTextBox
             // 
-            this.filePathTextBox.Location = new System.Drawing.Point(1040, 51);
+            this.filePathTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.filePathTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.25F);
+            this.filePathTextBox.Location = new System.Drawing.Point(39, 80);
             this.filePathTextBox.Name = "filePathTextBox";
-            this.filePathTextBox.Size = new System.Drawing.Size(144, 20);
+            this.filePathTextBox.Size = new System.Drawing.Size(190, 31);
             this.filePathTextBox.TabIndex = 1;
             // 
             // pathLabel
             // 
+            this.pathLabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pathLabel.AutoSize = true;
-            this.pathLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.pathLabel.Location = new System.Drawing.Point(1055, 28);
+            this.pathLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.pathLabel.Location = new System.Drawing.Point(68, 34);
             this.pathLabel.Name = "pathLabel";
-            this.pathLabel.Size = new System.Drawing.Size(114, 20);
+            this.pathLabel.Size = new System.Drawing.Size(138, 25);
             this.pathLabel.TabIndex = 2;
             this.pathLabel.Text = "Введите путь";
             // 
             // buildPlotsButton
             // 
-            this.buildPlotsButton.Location = new System.Drawing.Point(1040, 91);
+            this.buildPlotsButton.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.buildPlotsButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.25F);
+            this.buildPlotsButton.Location = new System.Drawing.Point(63, 134);
             this.buildPlotsButton.Name = "buildPlotsButton";
-            this.buildPlotsButton.Size = new System.Drawing.Size(144, 23);
+            this.buildPlotsButton.Size = new System.Drawing.Size(143, 34);
             this.buildPlotsButton.TabIndex = 3;
             this.buildPlotsButton.Text = "Построить графики";
             this.buildPlotsButton.UseVisualStyleBackColor = true;
@@ -79,28 +94,59 @@
             // 
             // pointsLabel
             // 
+            this.pointsLabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pointsLabel.AutoSize = true;
-            this.pointsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.pointsLabel.Location = new System.Drawing.Point(1037, 139);
+            this.pointsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.pointsLabel.Location = new System.Drawing.Point(127, 194);
             this.pointsLabel.Name = "pointsLabel";
-            this.pointsLabel.Size = new System.Drawing.Size(0, 20);
+            this.pointsLabel.Size = new System.Drawing.Size(0, 25);
             this.pointsLabel.TabIndex = 4;
+            // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel1.ColumnCount = 2;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 71.42857F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 28.57143F));
+            this.tableLayoutPanel1.Controls.Add(this.chart1, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.panel1, 1, 0);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(12, 12);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 1;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(923, 543);
+            this.tableLayoutPanel1.TabIndex = 5;
+            // 
+            // panel1
+            // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.Controls.Add(this.pathLabel);
+            this.panel1.Controls.Add(this.pointsLabel);
+            this.panel1.Controls.Add(this.filePathTextBox);
+            this.panel1.Controls.Add(this.buildPlotsButton);
+            this.panel1.Location = new System.Drawing.Point(662, 3);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(258, 537);
+            this.panel1.TabIndex = 1;
             // 
             // FunctionApproximation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1222, 661);
-            this.Controls.Add(this.pointsLabel);
-            this.Controls.Add(this.buildPlotsButton);
-            this.Controls.Add(this.pathLabel);
-            this.Controls.Add(this.filePathTextBox);
-            this.Controls.Add(this.chart1);
+            this.ClientSize = new System.Drawing.Size(939, 563);
+            this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "FunctionApproximation";
             this.Text = "FunctionApproximation";
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
+            this.tableLayoutPanel1.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -111,6 +157,8 @@
         private System.Windows.Forms.Label pathLabel;
         private System.Windows.Forms.Button buildPlotsButton;
         private System.Windows.Forms.Label pointsLabel;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.Panel panel1;
     }
 }
 
