@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea7 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend7 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.filePathTextBox = new System.Windows.Forms.TextBox();
             this.pathLabel = new System.Windows.Forms.Label();
@@ -47,10 +47,14 @@
             this.chart1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            chartArea3.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea3);
-            legend3.Name = "Legend1";
-            this.chart1.Legends.Add(legend3);
+            chartArea7.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea7);
+            legend7.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            legend7.IsTextAutoFit = false;
+            legend7.Name = "Legend1";
+            legend7.Title = "Многочлены";
+            legend7.TitleFont = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.chart1.Legends.Add(legend7);
             this.chart1.Location = new System.Drawing.Point(3, 3);
             this.chart1.Name = "chart1";
             this.chart1.Size = new System.Drawing.Size(653, 537);
@@ -94,14 +98,15 @@
             // 
             // pointsLabel
             // 
-            this.pointsLabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pointsLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pointsLabel.AutoSize = true;
             this.pointsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.pointsLabel.Location = new System.Drawing.Point(127, 194);
+            this.pointsLabel.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.pointsLabel.Location = new System.Drawing.Point(96, 195);
             this.pointsLabel.Name = "pointsLabel";
             this.pointsLabel.Size = new System.Drawing.Size(0, 25);
             this.pointsLabel.TabIndex = 4;
+            this.pointsLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // tableLayoutPanel1
             // 
@@ -109,8 +114,8 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel1.ColumnCount = 2;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 71.42857F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 28.57143F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tableLayoutPanel1.Controls.Add(this.chart1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.panel1, 1, 0);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(12, 12);
